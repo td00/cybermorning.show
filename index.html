@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>CyberMorningshow</title>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -12,21 +13,63 @@
 		<div id="morningshow">Morningshow</div>
 	</header>
 
-	<section class="container">
-		<div class="introduction">
-			<p>An einem grauen Tag im kalten Hannover auf einem eskalationsbedürftigen Event begab es sich, dass eine Gruppe von Nerds eine Morningshow ins Leben gerufen haben. Dies war die Geburtsstunde der <span class="hl">CyberMorningshow</span></p>
+	<div class="container">
+		<div>
+			<section class="introduction">
+				<p class="lead">An einem grauen Morgen im kalten Hannover begab es sich, dass eine Gruppe von Nerds auf einem eskalationsbedürftigen Event zusammenkamen und beschlossen eine Morningshow ins Leben zu rufen.</p><p class="lead">Dies war die Geburtsstunde der <span class="cyber">CyberMorningshow</span></p>
+			</section>
+
+			<section class="next">
+				<h2>Nächste Sendung</h2>
+				<p>Die nächste <span class="cyber">CyberMorningshow</span> findet auf dem <strong>33. Chaos Communication Congress</strong> im Sendezentrum statt. Der genaue Zeitslot wird hier und auf <a href="https://twitter.com/cymoshow">Twitter</a> angekündigt sobald bekannt.</p>
+
+				<h4>Thieser <span class="small tnte">(präsentiert von der <span class="cyber">Thies &amp; Thies Eskalations GbR</span>)</span></h4>
+				<div>
+					<audio controls>
+						<source src="audio/teaser.ogg" type="audio/ogg">
+						<source src="audio/teaser.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</section>
+
+<!--
+			<section class="team">
+				<div class="person">
+					<span class="name">couchsofa</span>
+					<div class="twitter"><a href="https://twitter.com/couchsofa">@couchsofa</a></div>
+				</div>
+			</section>-->
+
+			<section class="contact">
+				<h2>Kontakt</h2>
+				<span class="icon-twitter-big"></span> <a href="https://twitter.com/cymoshow">@CyMoShow</a>
+			</section>
 		</div>
 
-		<div class="teaser">
-			Thieser <span class="tnte">(präsentiert von der <span class="tntehl">Thies &amp; Thies Eskalations GbR</span>)</span>:
-			<audio controls>
-				<source src="audio/teaser.ogg" type="audio/ogg">
-				<source src="audio/teaser.mp3" type="audio/mpeg">
-			</audio>
-		</div>
-	</section>
+		<section class="credits">
+			<h6>Credits</h6>
+			<p>Der Thieser wurde produziert von <a href="https://twitter.com/couchsofa">couchsofa</a> und <a href="https://twitter.com/Tii">Tii</a>.</p>
+			<p>Speaker-Icon by <a href="https://www.iconfinder.com/designmodo">Designmodo</a> under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+			<p>Twitter-Icon by <a href="https://www.iconfinder.com/zlaten">Zlatko Najdenovski</a> under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+		</section>
+	</div>
+
+	<aside style="display:none">
+		<audio id="tnte-jingle" style="display:none">
+			<source src="audio/tnte.ogg" type="audio/ogg">
+			<source src="audio/tnte.mp3" type="audio/mpeg">
+		</audio>
+	</aside>
 
 	<script src="/js/jquery-3.1.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script>
+		$(".tnte").mouseover(function() {
+			$("#tnte-jingle").trigger("play");
+		}).mouseout(function() {
+			$("#tnte-jingle").trigger("pause")
+				.prop("currentTime", 0);
+		});
+	</script>
 </body>
 </html>

@@ -1,22 +1,100 @@
-header {
-	height: 250px;
-	position: relative;
+html, body {
+    height: 100%;
 }
 
+body {
+    background-color: #eee;
+    overflow: hidden;
+}
+
+header {
+	height: 250px;
+    padding-top: 60px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+
 #cyber {
-	background: url(/img/cyber_plain.png) repeat-x;
-    background-size: 250px;
-    height: 91px;
-    width: 150%;
-    transform: rotate(-6deg) translate(-50px) translateY(0px);
+    background: url(/img/cyber_plain.png) repeat-x;
+    background-size: contain;
+    height: 100px;
+    transform: rotate(-6deg) translate(-20px);
+    width: 110%;
 }
 
 #morningshow {
 	position: absolute;
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: bold;
-    font-family: monospace;
+    font-family: 'Share Tech Mono', monospace;
     width: 100%;
     text-align: center;
-    top: 100px;
+    top: 160px;
+}
+
+/* Special elements */
+
+.tnte {
+    cursor: url(/img/speaker.png), pointer;
+}
+
+.cyber {
+    background-color: #E8DC1E;
+    color: black;
+    padding: 2px 5px;
+}
+
+/* Sections in general */
+section {
+    margin-bottom: 60px;
+}
+
+.introduction {
+    text-align: justify;
+}
+
+
+/* Section: Team; */
+
+.team {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* Section: Credits; */
+
+.credits {
+    align-self: flex-end;
+    font-size: 8pt;
+    margin-top: 40px;
+    text-align: right;
+}
+.credits h6 {
+    text-decoration: underline;
+}
+
+.icon-twitter {
+    display: inline-block;
+    background: url(/img/twitter.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    vertical-align: baseline;
+}
+
+.icon-twitter-big {
+    display: inline-block;
+    background: url(/img/twitter-square.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    vertical-align: -11px;
 }
