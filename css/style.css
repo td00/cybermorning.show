@@ -1,0 +1,22 @@
+header {
+	height: 250px;
+	position: relative;
+}
+
+#cyber {
+	background: url(/img/cyber_plain.png) repeat-x;
+    background-size: 250px;
+    height: 91px;
+    width: 150%;
+    transform: rotate(-6deg) translate(-50px) translateY(0px);
+}
+
+#morningshow {
+	position: absolute;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: monospace;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+}
