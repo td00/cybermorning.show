@@ -32,7 +32,7 @@ header {
 
 #morningshow {
 	position: absolute;
-    font-size: 7rem;
+    font-size: 40px;
     font-weight: bold;
     font-family: 'Share Tech Mono', monospace;
     width: 100%;
@@ -40,19 +40,16 @@ header {
     top: 160px;
 }
 
-/* Special elements */
-
-.tnte {
-    cursor: url(/img/speaker.png), pointer;
+@media (min-width: 768px) {
+    #morningshow {
+        font-size: 60px;
+    }
 }
 
-.cyber {
-    background-color: #E8DC1E;
-    color: black;
-    padding: 2px 5px;
-}
 
 /* Sections in general */
+
+
 section {
     margin-bottom: 60px;
 }
@@ -82,6 +79,26 @@ section {
 .credits h6 {
     text-decoration: underline;
 }
+
+
+
+
+/* Special elements */
+
+.tnte {
+    cursor: url(/img/speaker.png), pointer;
+}
+
+.cyber {
+    background-color: #E8DC1E;
+    color: black;
+    padding: 2px 5px;
+}
+
+
+
+
+/* Icons */
 
 .icon-twitter {
     display: inline-block;
