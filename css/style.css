@@ -4,7 +4,7 @@ html, body {
 
 body {
     background-color: #eee;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -26,8 +26,8 @@ header {
     background: url(/img/cyber_plain.png) repeat-x;
     background-size: contain;
     height: 100px;
-    transform: rotate(-6deg) translate(-20px);
-    width: 110%;
+    transform: rotate(-6deg) translate(-10px);
+    width: 100%;
 }
 
 #morningshow {
@@ -41,6 +41,9 @@ header {
 }
 
 @media (min-width: 768px) {
+    #cyber {
+        width: 110%;
+    }
     #morningshow {
         font-size: 60px;
     }
@@ -85,6 +88,11 @@ section {
 
 /* Special elements */
 
+
+audio {
+    width: 100%;
+}
+
 .tnte {
     cursor: url(/img/speaker.png), pointer;
 }
@@ -95,7 +103,11 @@ section {
     padding: 2px 5px;
 }
 
-
+@media (min-width: 768px) {
+    audio {
+        width: 380px;
+    }
+}
 
 
 /* Icons */
