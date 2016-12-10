@@ -16,7 +16,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
-    text-shadow: 1px 1px 3px #333;
 }
 
 h6 {
@@ -38,7 +37,7 @@ header {
     height: 80px;
     transform: rotate(-6deg);
     width: 100%;
-    box-shadow: 5px 5px 20px #333;
+    outline: 1px solid #333;
 }
 
 #morningshow {
@@ -49,8 +48,6 @@ header {
     width: 100%;
     text-align: center;
     top: 100px;
-
-    text-shadow: 10px 10px 20px #333;
 }
 
 @media (min-width: 768px) {
