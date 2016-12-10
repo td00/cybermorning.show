@@ -7,27 +7,38 @@ body {
     overflow-x: hidden;
 }
 
-header {
-	height: 250px;
-    padding-top: 60px;
-    position: relative;
-    margin-bottom: 30px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #333;
+}
+
+h6 {
+    text-decoration: underline;
+}
+
 /* Header */
+
+header {
+    height: 200px;
+    padding-top: 20px;
+    position: relative;
+    margin-bottom: 0px;
+}
 
 #cyber {
     background: url(/img/cyber_plain.png) repeat-x;
     background-size: contain;
-    height: 100px;
-    transform: rotate(-6deg) translate(-10px);
+    height: 80px;
+    transform: rotate(-6deg);
     width: 100%;
+    box-shadow: 5px 5px 20px #333;
 }
 
 #morningshow {
@@ -37,15 +48,25 @@ header {
     font-family: 'Share Tech Mono', monospace;
     width: 100%;
     text-align: center;
-    top: 160px;
+    top: 100px;
+
+    text-shadow: 10px 10px 20px #333;
 }
 
 @media (min-width: 768px) {
+    header {
+        height: 250px;
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
     #cyber {
         width: 110%;
+        height: 100px;
+        transform: rotate(-6deg) translate(-10px);
     }
     #morningshow {
         font-size: 60px;
+        top: 160px;
     }
 }
 
@@ -78,9 +99,6 @@ section {
     font-size: 8pt;
     margin-top: 40px;
     text-align: right;
-}
-.credits h6 {
-    text-decoration: underline;
 }
 
 
