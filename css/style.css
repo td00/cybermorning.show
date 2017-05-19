@@ -32,7 +32,7 @@ header {
 }
 
 #cyber {
-    background: url(/img/cyber_plain.png) repeat-x;
+    background: url(img/cyber_plain.png) repeat-x;
     background-size: contain;
     height: 80px;
     transform: rotate(-6deg);
@@ -110,7 +110,7 @@ audio {
 }
 
 .tnte {
-    cursor: url(/img/speaker.png), pointer;
+    cursor: url(img/speaker.png), pointer;
 }
 
 .cyber {
@@ -136,7 +136,7 @@ audio {
 
 .icon-twitter {
     display: inline-block;
-    background: url(/img/twitter.png) no-repeat;
+    background: url(img/twitter.png) no-repeat;
     width: 20px;
     height: 20px;
     vertical-align: baseline;
@@ -144,7 +144,7 @@ audio {
 
 .icon-twitter-big {
     display: inline-block;
-    background: url(/img/twitter-square.png) no-repeat;
+    background: url(img/twitter-square.png) no-repeat;
     width: 32px;
     height: 32px;
     vertical-align: -11px;
