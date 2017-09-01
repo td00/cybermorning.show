@@ -42,11 +42,22 @@ header {
     height: 80px;
     margin-left: -5%;
 
+    transition: 1s ease-in-out;
     transform: rotate(-6deg);
+    animation: slide 45s linear infinite;
 
     outline: 1px solid #333;
     background: url(/img/cyber_plain.png) repeat-x;
     background-size: contain;
+}
+
+@keyframes slide {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 738px;
+  }
 }
 
 #morningshow {
