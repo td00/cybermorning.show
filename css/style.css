@@ -3,8 +3,9 @@ html, body {
 }
 
 body {
-    background-color: #eee;
     overflow-x: hidden;
+
+    background-color: #eee;
 }
 
 .container {
@@ -29,46 +30,54 @@ hr {
 /* Header */
 
 header {
-    height: 200px;
-    padding-top: 20px;
     position: relative;
+
+    height: 200px;
     margin-bottom: 0px;
+    padding-top: 20px;
 }
 
 #cyber {
+    width: 110%;
+    height: 80px;
+    margin-left: -5%;
+
+    transform: rotate(-6deg);
+
+    outline: 1px solid #333;
     background: url(/img/cyber_plain.png) repeat-x;
     background-size: contain;
-    height: 80px;
-    transform: rotate(-6deg);
-    width: 110%;
-    margin-left: -5%;
-    outline: 1px solid #333;
 }
 
 #morningshow {
 	position: absolute;
+    top: 100px;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-family: 'Share Tech Mono', monospace;
     font-size: 40px;
     font-weight: bold;
-    font-family: 'Share Tech Mono', monospace;
-    width: 100%;
-    text-align: center;
-    top: 100px;
 }
 
 @media (min-width: 768px) {
     header {
         height: 250px;
-        padding-top: 60px;
         margin-bottom: 40px;
+        padding-top: 60px;
     }
     #cyber {
         width: 110%;
         height: 100px;
+
         transform: rotate(-6deg) translate(-10px);
     }
     #morningshow {
-        font-size: 60px;
         top: 160px;
+
+        font-size: 60px;
     }
 }
 
@@ -78,6 +87,7 @@ header {
 
 section {
     margin-bottom: 60px;
+
     text-align: justify;
 }
 
@@ -96,8 +106,8 @@ section {
 .prevshow time {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
-    line-height: 1.42857143;
     font-weight: normal;
+    line-height: 1.42857143;
 }
 
 hr.prevshow-spacer {
@@ -119,9 +129,12 @@ hr.prevshow-spacer {
 
 .credits {
     align-self: flex-end;
-    font-size: 8pt;
+
     margin-top: 40px;
+
     text-align: right;
+
+    font-size: 8pt;
 }
 
 
@@ -139,9 +152,10 @@ audio {
 }
 
 .cyber {
-    background-color: #E8DC1E;
-    color: black;
     padding: 2px 5px;
+
+    color: black;
+    background-color: #E8DC1E;
 }
 
 @media (min-width: 768px) {
@@ -155,22 +169,29 @@ audio {
 
 .icon {
     display: inline-block;
+
     width: 32px;
     height: 32px;
 }
 
 .icon-twitter {
     display: inline-block;
-    background: url(/img/twitter.png) no-repeat;
+
     width: 20px;
     height: 20px;
+
     vertical-align: baseline;
+
+    background: url(/img/twitter.png) no-repeat;
 }
 
 .icon-twitter-big {
     display: inline-block;
-    background: url(/img/twitter-square.png) no-repeat;
+
     width: 32px;
     height: 32px;
+
     vertical-align: -11px;
+
+    background: url(/img/twitter-square.png) no-repeat;
 }
