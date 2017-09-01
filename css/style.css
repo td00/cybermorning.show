@@ -40,7 +40,8 @@ header {
     background-size: contain;
     height: 80px;
     transform: rotate(-6deg);
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
     outline: 1px solid #333;
 }
 
@@ -89,7 +90,7 @@ section {
 /* Section: Previous Shows; */
 
 .prevshow {
-    
+
 }
 
 .prevshow time {
