@@ -42,7 +42,6 @@ header {
     height: 80px;
     margin-left: -5%;
 
-    transition: 1s ease-in-out;
     transform: rotate(-6deg);
 
     outline: 1px solid #333;
@@ -52,13 +51,10 @@ header {
 
 @keyframes slide {
   0% {
-    background-position-x: 0vw;
-  }
-  50% {
-    background-position-x: 100vw;
+    background-position-x: 0px;
   }
   100% {
-    background-position-x: 0vw;
+    background-position-x: 277px;
   }
 }
 
@@ -86,7 +82,7 @@ header {
         height: 100px;
 
         transform: rotate(-6deg) translate(-10px);
-        animation: slide 30s ease-in-out infinite;
+        animation: slide 6s linear infinite;
     }
     #morningshow {
         top: 160px;
