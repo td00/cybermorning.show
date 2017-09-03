@@ -54,7 +54,7 @@ header {
     background-position-x: 0px;
   }
   100% {
-    background-position-x: 277px;
+    background-position-x: -277px;
   }
 }
 
